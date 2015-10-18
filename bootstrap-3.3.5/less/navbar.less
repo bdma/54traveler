@@ -275,6 +275,13 @@
       > a {
         padding-top:  12px;
         padding-bottom: 12px;
+        &:hover,
+        &:focus {
+          text-decoration: none;
+          color: #ad0711;
+          padding-bottom: 10px;
+          border-bottom: 4px solid #ad0711;
+        }
       }
     }
   }
@@ -419,8 +426,8 @@
 
       &:hover,
       &:focus {
-        color: @navbar-default-link-hover-color;
-        background-color: @navbar-default-link-hover-bg;
+        // color: @navbar-default-link-hover-color;
+        // background-color: @navbar-default-link-hover-bg;
       }
     }
     > .active > a {
@@ -428,7 +435,10 @@
       &:hover,
       &:focus {
         color: @navbar-default-link-active-color;
-        background-color: @navbar-default-link-active-bg;
+        text-decoration: none;
+        color: #ad0711;
+        padding-bottom: 10px;
+        border-bottom: 4px solid #ad0711
       }
     }
     > .disabled > a {
