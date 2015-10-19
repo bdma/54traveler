@@ -11,7 +11,7 @@
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
-  margin-bottom: @navbar-margin-bottom;
+  margin-bottom:0;
   border: 1px solid transparent;
 
   // Prevent floats from breaking the navbar
@@ -275,13 +275,6 @@
       > a {
         padding-top:  12px;
         padding-bottom: 12px;
-        &:hover,
-        &:focus {
-          text-decoration: none;
-          color: #ad0711;
-          padding-bottom: 10px;
-          border-bottom: 4px solid #ad0711;
-        }
       }
     }
   }
@@ -426,8 +419,8 @@
 
       &:hover,
       &:focus {
-        // color: @navbar-default-link-hover-color;
-        // background-color: @navbar-default-link-hover-bg;
+        color: @navbar-default-link-hover-color;
+        background-color: @navbar-default-link-hover-bg;
       }
     }
     > .active > a {
@@ -435,10 +428,7 @@
       &:hover,
       &:focus {
         color: @navbar-default-link-active-color;
-        text-decoration: none;
-        color: #ad0711;
-        padding-bottom: 10px;
-        border-bottom: 4px solid #ad0711
+        background-color: @navbar-default-link-active-bg;
       }
     }
     > .disabled > a {

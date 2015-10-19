@@ -4197,7 +4197,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 38px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -4394,13 +4394,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  .navbar-nav > li > a:hover,
-  .navbar-nav > li > a:focus {
-    text-decoration: none;
-    color: #ad0711;
-    padding-bottom: 10px;
-    border-bottom: 4px solid #ad0711;
-  }
 }
 .navbar-form {
   margin-left: -15px;
@@ -4548,13 +4541,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a {
   color: #777777;
 }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #333333;
+  background-color: transparent;
+}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  text-decoration: none;
   color: #ad0711;
-  padding-bottom: 10px;
-  border-bottom: 4px solid #ad0711;
+  background-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -6410,7 +6406,7 @@ button.close {
 }
 .carousel-indicators {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -6476,7 +6472,7 @@ button.close {
     padding-bottom: 30px;
   }
   .carousel-indicators {
-    bottom: 20px;
+    bottom: 5px;
   }
 }
 .clearfix:before,
