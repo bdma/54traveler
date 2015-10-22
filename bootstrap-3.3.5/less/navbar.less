@@ -50,7 +50,7 @@
 .navbar-collapse {
   overflow-x: visible;
   padding-right: @navbar-padding-horizontal;
-  padding-left:  @navbar-padding-horizontal;
+  padding-left: 1px;// @navbar-padding-horizontal;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
   &:extend(.clearfix all);
@@ -162,7 +162,7 @@
 
 .navbar-brand {
   float: left;
-  padding: 2px @navbar-padding-horizontal;
+  padding: 2px 1px;//@navbar-padding-horizontal;
   font-size: @font-size-large;
   line-height: @line-height-computed;
   height:84px;
@@ -366,7 +366,7 @@
   @media (min-width: @grid-float-breakpoint) {
     float: left;
     margin-left: @navbar-padding-horizontal;
-    margin-right: @navbar-padding-horizontal;
+    margin-right: -75px;//@navbar-padding-horizontal;
   }
 }
 
@@ -383,7 +383,7 @@
   .navbar-left  { .pull-left(); }
   .navbar-right {
     .pull-right();
-    margin-right: -@navbar-padding-horizontal;
+    margin-right:25px;// -@navbar-padding-horizontal;
 
     ~ .navbar-right {
       margin-right: 0;
